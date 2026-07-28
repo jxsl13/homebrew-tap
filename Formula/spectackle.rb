@@ -5,21 +5,21 @@
 class Spectackle < Formula
   desc "Token-efficient, spec-driven MCP server for cross-language codebases"
   homepage "https://github.com/jxsl13/spectackle"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jxsl13/spectackle/releases/download/v0.7.0/spectackle_darwin_amd64.tar.gz"
-      sha256 "ce369103d325465e361c1f36491c9adb57f28501118103c7c5436e14bfffe119"
+      url "https://github.com/jxsl13/spectackle/releases/download/v0.7.1/spectackle_darwin_amd64.tar.gz"
+      sha256 "52fc6c31479cbe5986ed93a2c2f9c8b7ce2d05e1e1ad9e279cfee46eb7498c1c"
 
       define_method(:install) do
         bin.install "spectackle"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jxsl13/spectackle/releases/download/v0.7.0/spectackle_darwin_arm64.tar.gz"
-      sha256 "4608aab0ae4846e7566d59a3e79aa13243c39d4e725a92afafefc3285aa2bebe"
+      url "https://github.com/jxsl13/spectackle/releases/download/v0.7.1/spectackle_darwin_arm64.tar.gz"
+      sha256 "91a833b286cb5dba17a4d9d7018dd3f14dc3d15c587cd22888d8ec87417f45ae"
 
       define_method(:install) do
         bin.install "spectackle"
@@ -29,15 +29,15 @@ class Spectackle < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jxsl13/spectackle/releases/download/v0.7.0/spectackle_linux_amd64.tar.gz"
-      sha256 "3113968c86af65a4fc641ce12db92c4e10a00355b4a590083f169ac4d4d8dd82"
+      url "https://github.com/jxsl13/spectackle/releases/download/v0.7.1/spectackle_linux_amd64.tar.gz"
+      sha256 "efc7bcdbf0fae0238240d2eaa91d5b69c31ddecd5a60f008be99c8e2e7f694e7"
       define_method(:install) do
         bin.install "spectackle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jxsl13/spectackle/releases/download/v0.7.0/spectackle_linux_arm64.tar.gz"
-      sha256 "2a0a4dcaafa7f2553b455ae4d770195e8ba435aa5fc682c6808d1dbd74517777"
+      url "https://github.com/jxsl13/spectackle/releases/download/v0.7.1/spectackle_linux_arm64.tar.gz"
+      sha256 "53920388bb097ef09b315d7eb3b5ac7a0ed7b642802f10da4d0f74672b7a867a"
       define_method(:install) do
         bin.install "spectackle"
       end
